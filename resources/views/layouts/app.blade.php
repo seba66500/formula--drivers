@@ -8,11 +8,11 @@
 <body>
     <header>
         <ul>
-            <li><a href="">Main page</a></li>
-            <li><a href="">List of drivers</a></li>
-            <li><a href="">Drivers championship table</a></li>
-            <li><a href="">Penalty points</a></li>
-            <li><a href="">Reprimands</a></li>
+            <li><a href="{{route('index')}}">Main page</a></li>
+            <li><a href="{{route('drivers')}}">List of drivers</a></li>
+            <li><a href="{{route('standings')}}">Drivers championship table</a></li>
+            <li><a href="{{route('penalty')}}">Penalty points</a></li>
+            <li><a href="{{route('reprimends')}}">Reprimands</a></li>
         </ul>
     </header>
     <section>

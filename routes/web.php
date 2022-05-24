@@ -14,4 +14,12 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->name('index');
+
+Route::get('/drivers', [IndexController::class, 'drivers'])->name('drivers');
+
+Route::get('/standings', [IndexController::class, 'standings'])->name('standings');
+
+Route::get('/penalty', [IndexController::class, 'penalty'])->name('penalty');
+
+Route::get('/reprimends', [IndexController::class, 'reprimends'])->name('reprimends');
