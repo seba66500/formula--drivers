@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -11,7 +12,8 @@ class IndexController extends Controller
     }
 
     public function drivers(){
-        return view('drivers');
+        $drivers = DB::select('select * from drivers order by contract_expire ASC');
+        return view('drivers', ['drivers' => $drivers]);
     }
 
     public function standings(){

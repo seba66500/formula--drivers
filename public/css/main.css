@@ -19,3 +19,15 @@ li a{
 header{
     height: 100px;
 }
+#drivers-table{
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    text-align: left;
+}
+#drivers-table th,
+#drivers-table td{
+    padding: 12px 15px;
+}
