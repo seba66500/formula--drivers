@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <table id="drivers-table">
+    <table class="table">
         <thead>
             <tr>
                 <th>Name</th>
