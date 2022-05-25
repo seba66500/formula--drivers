@@ -2,12 +2,15 @@
 
 @section('content')
     <table id="drivers-table">
-        <tr>
-            <th>Name</th>
-            <th>Last name</th>
-            <th>Team</th>
-            <th>Contract expire</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Team</th>
+                <th>Contract expire</th>
+            </tr>
+        </thead>
+        <tbody>
             @foreach ($drivers as $driver)
                 <tr>
                     <td>{{$driver->name}}</td>
@@ -16,5 +19,6 @@
                     <td>{{$driver->contract_expire}}</td>
                 </tr>
             @endforeach
+        </tbody>
     </table>
 @stop
