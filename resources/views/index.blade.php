@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    This is my first laravel app
+    <p>This is my first laravel app</p>
 @stop

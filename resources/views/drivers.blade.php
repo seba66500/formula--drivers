@@ -4,19 +4,19 @@
     <table class="table">
         <thead>
             <tr>
+                <th>Drivers </th>
                 <th>Name</th>
                 <th>Last name</th>
                 <th>Team</th>
-                <th>Contract expire</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($drivers as $driver)
                 <tr>
+                    <td>{{$driver->id}}</td>
                     <td>{{$driver->name}}</td>
                     <td>{{$driver->last_name}}</td>
                     <td>{{$driver->team}}</td>
-                    <td>{{$driver->contract_expire}}</td>
                 </tr>
             @endforeach
         </tbody>
