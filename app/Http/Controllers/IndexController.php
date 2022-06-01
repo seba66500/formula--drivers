@@ -41,4 +41,12 @@ class IndexController extends Controller
         return view('reprimends', ['reprimends' => $reprimends]);
     }
 
+    public function contracts(){
+        $contracts = DB::select("SELECT concat(name, ' ', last_name) AS name, team
+        FROM drivers 
+        WHERE contract_expire = '2022'
+        ORDER BY id ASC");
+        return view('contracts', ['contracts' => $contracts]);
+    }
+
 }

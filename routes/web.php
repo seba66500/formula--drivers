@@ -23,3 +23,5 @@ Route::get('/standings', [IndexController::class, 'standings'])->name('standings
 Route::get('/penalty', [IndexController::class, 'penalty'])->name('penalty');
 
 Route::get('/reprimends', [IndexController::class, 'reprimends'])->name('reprimends');
+
+Route::get('/contracts', [IndexController::class, 'contracts'])->name('contracts');

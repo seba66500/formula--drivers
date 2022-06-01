@@ -13,6 +13,7 @@
             <li><a href="{{route('standings')}}">Drivers championship table</a></li>
             <li><a href="{{route('penalty')}}">Penalty points</a></li>
             <li><a href="{{route('reprimends')}}">Reprimands</a></li>
+            <li><a href="{{route('contracts')}}">Contract expirations this year</a></li>
         </ul>
     </header>
     <section>
